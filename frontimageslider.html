@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            align-items: center;
+        }
+        .imageslider{
+          width:80%;
+          height: 500px;
+          position:absolute;
+          transform: translate(-50%,-50%);
+          top: 50%;
+          left: 50%;
+          overflow: hidden;
+          
+        }
+        .wrapper{
+            width: 100%;
+            display: flex;
+            animation: changeimg 16s infinite;
+        }
+        @keyframes changeimg{
+            0%{
+                transform: translateX(0);
+            }
+            25%{
+                transform: translateX(0);
+            }
+            30%{
+                transform: translateX(-100%);
+            }
+            50%{
+                transform: translateX(-100%);
+            }
+            55%{
+                transform: translateX(-200%);
+            }
+            75%{
+                transform: translateX(-200%);
+            }
+            85%{
+                transform: translateX(-300%);
+            }
+            100%{
+                transform: translateX(-300%);
+            }
+        }
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="imageslider">
+        <div class="wrapper">
+            <img src="h1.jpg" alt="">
+            <img src="h2.jpg" alt="">
+            <img src="h4.jpg" alt="">
+            <img src="h5.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
